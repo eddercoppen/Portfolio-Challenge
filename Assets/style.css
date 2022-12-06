@@ -1,0 +1,152 @@
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  header {
+      width: 960px;
+      max-height: 120px;
+      display: flex;
+      align-items: center;
+      padding: 20px ;
+      
+      
+  }
+
+  #biopic {
+    margin: 10px;
+    height: 100px;
+    float: left;
+    border: 1px white solid;
+    border-left: 5px solid white;
+  }
+
+  header p {
+    margin-right: auto;
+  }
+  
+  #links li {
+    margin-right: 10px;
+    display: inline;
+    list-style: none;
+  }
+  aside, section {
+    float: left;
+  }
+  
+  aside {
+    width: 200px;
+    margin-right: 10px;
+    display: flex block;
+    justify-content: flex-end;
+    border: solid white 1px;
+  }
+
+  aside h3 {
+    
+    height: 200px;
+    text-align: right;
+    align-items: flex-end;
+
+  }
+  
+  section {
+    width: 750px;
+  }
+
+  * , *:before, *:after {
+
+    box-sizing: border-box;
+  }
+
+  body {
+    background: slategray;
+    color: white;
+    font-family: serif;
+    text-align: center;
+    margin: 0;
+  }
+  
+  header,
+  nav,
+  aside,
+  section {
+    border: 1px solid white;
+    border-left: 5px solid white;
+    margin-bottom: 10px;
+  }
+  
+  
+
+
+  #projectgrid {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+  }
+
+ .project-cards {
+    display: flex;
+	margin:  5px;
+	padding:  2px;
+	color:aliceblue;
+	border: 1px solid white;
+  
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .project-cards:hover {
+    border: solid darkblue;
+
+  }
+
+  #projectgrid h4 {
+    text-align: right;
+
+  }
+
+  #project1 {
+    
+  height: 300px;
+  background-image: url(/assets/check.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+    width: 95%;
+  }
+
+  #project2 {
+    background-color: slateblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 30%;
+  }
+
+  #project3 {
+    background-image: url(/Assets/jute.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 50%;
+  }
+
+  #project4 {
+    background-image: url(/Assets/wood.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+  }
+
+  #project5 {
+    background-color: burlywood;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 70%;
+  }
+
+  
