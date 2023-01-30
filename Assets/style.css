@@ -1,152 +1,156 @@
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-  }
+body {
+  max-width: 90%;
+  margin: 0 auto;
+  background: slategray;
+  color: white;
+  font-family: serif;
+ 
+}
+
+body > * {
+  align-content: center;
+}
+
+header {
+  max-width: 90%;
+  max-height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+#biopic {
   
-  header {
-      width: 960px;
-      max-height: 120px;
-      display: flex;
-      align-items: center;
-      padding: 20px ;
-      
-      
-  }
+  height: 100px;
+  border: 1px white solid;
+  border-left: 5px solid white;
+}
 
-  #biopic {
-    margin: 10px;
-    height: 100px;
-    float: left;
-    border: 1px white solid;
-    border-left: 5px solid white;
-  }
 
-  header p {
-    margin-right: auto;
-  }
+
+.page-title {
+ 
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+ 
+}
+
+#links li {
+ 
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+}
+
+#links li > a {
+  text-decoration: none;
+  color: white;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+aside {
+  flex: 1 1 10%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  border: solid white 1px;
+  align-items: flex-end;
+}
+
+aside > a {
+  padding: 1em;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+.border-line {
+  border: 1px solid white;
+  border-left: 5px solid white;
+  margin-bottom: 10px;
+}
+
+#portfolio {
+  display: flex;
+  max-width: 90%;
+}
+
+#projectgrid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3 1 50%;
   
-  #links li {
-    margin-right: 10px;
-    display: inline;
-    list-style: none;
-  }
-  aside, section {
-    float: left;
-  }
-  
-  aside {
-    width: 200px;
-    margin-right: 10px;
-    display: flex block;
-    justify-content: flex-end;
-    border: solid white 1px;
-  }
+}
 
-  aside h3 {
-    
-    height: 200px;
-    text-align: right;
-    align-items: flex-end;
-
-  }
-  
-  section {
-    width: 750px;
-  }
-
-  * , *:before, *:after {
-
-    box-sizing: border-box;
-  }
-
-  body {
-    background: slategray;
-    color: white;
-    font-family: serif;
-    text-align: center;
-    margin: 0;
-  }
-  
-  header,
-  nav,
-  aside,
-  section {
-    border: 1px solid white;
-    border-left: 5px solid white;
-    margin-bottom: 10px;
-  }
-  
-  
-
-
-  #projectgrid {
-    display: block;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    
-  }
-
- .project-cards {
-    display: flex;
-	margin:  5px;
-	padding:  2px;
-	color:aliceblue;
-	border: 1px solid white;
-  
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  .project-cards:hover {
-    border: solid darkblue;
-
-  }
-
-  #projectgrid h4 {
-    text-align: right;
-
-  }
-
-  #project1 {
-    
-  height: 300px;
-  background-image: url(/assets/check.png);
+.project-cards {
   background-repeat: no-repeat;
   background-size: cover;
-  
-    width: 95%;
-  }
+  height: 200px;
+  margin: 5px;
+  padding: 2px;
+  color: aliceblue;
+  border: 1px solid white;
 
-  #project2 {
-    background-color: slateblue;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 30%;
-  }
+  align-items: flex-end;
+  justify-content: flex-end;
+}
 
-  #project3 {
-    background-image: url(/Assets/jute.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 50%;
-  }
+.project-cards:hover {
+  border: solid darkblue;
+}
 
-  #project4 {
-    background-image: url(/Assets/wood.png);
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 20%;
-  }
+#projectgrid h4 {
+  text-align: right;
+}
 
-  #project5 {
-    background-color: burlywood;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    width: 70%;
-  }
+aside > a:hover {
+  color: darkblue;
 
-  
+}
+
+
+#project1 {
+  height: 300px;
+  background-image: url('Cinevents.png');
+  width: 95%;
+}
+
+#project2 {
+  background-color: slateblue;
+  width: 30%;
+}
+
+#project3 {
+  background-image: url(jute.png);
+
+  width: 50%;
+}
+
+#project4 {
+  background-image: url(wood.png);
+  width: 20%;
+}
+
+#project5 {
+  background-color: burlywood;
+  width: 70%;
+}
