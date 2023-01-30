@@ -1,18 +1,12 @@
 body {
-  max-width: 90%;
   margin: 0 auto;
   background: slategray;
   color: white;
   font-family: serif;
- 
-}
-
-body > * {
-  align-content: center;
 }
 
 header {
-  max-width: 90%;
+  max-width: 90vw;
   max-height: 120px;
   display: flex;
   align-items: center;
@@ -22,24 +16,18 @@ header {
 }
 
 #biopic {
-  
   height: 100px;
   border: 1px white solid;
   border-left: 5px solid white;
 }
 
-
-
 .page-title {
- 
   font-size: 1.75em;
   font-weight: bold;
   text-align: center;
- 
 }
 
 #links li {
- 
   display: inline;
   list-style: none;
   text-decoration: none;
@@ -50,18 +38,12 @@ header {
   color: white;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
   color: inherit;
-}
-
-aside {
-  flex: 1 1 10%;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-  border: solid white 1px;
-  align-items: flex-end;
 }
 
 aside > a {
@@ -70,18 +52,9 @@ aside > a {
   font-weight: bolder;
 }
 
-
-
-
-
-
-*,
-*:before,
-*:after {
+* {
   box-sizing: border-box;
 }
-
-
 
 .border-line {
   border: 1px solid white;
@@ -89,29 +62,41 @@ aside > a {
   margin-bottom: 10px;
 }
 
-#portfolio {
-  display: flex;
-  max-width: 90%;
+.portfolio {
+  justify-content: center;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: 200px repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
 }
 
-#projectgrid {
+aside {
+  grid-column: 1;
   display: flex;
-  flex-wrap: wrap;
-  flex: 3 1 50%;
-  
+  flex-direction: column;
+  border: solid white 1px;
+  align-items: flex-end;
+}
+
+.project-grid {
+  display: grid;
+  grid-column: 2/5;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 10px;
 }
 
 .project-cards {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  margin: 5px;
   padding: 2px;
   color: aliceblue;
   border: 1px solid white;
-
-  align-items: flex-end;
-  justify-content: flex-end;
 }
 
 .project-cards:hover {
@@ -124,33 +109,30 @@ aside > a {
 
 aside > a:hover {
   color: darkblue;
-
 }
-
 
 #project1 {
   height: 300px;
-  background-image: url('Cinevents.png');
-  width: 95%;
+  background-image: url("Cinevents.png");
+  grid-column: 1/4;
 }
 
 #project2 {
   background-color: slateblue;
-  width: 30%;
+  grid-column: 1;
 }
 
 #project3 {
   background-image: url(jute.png);
-
-  width: 50%;
+  grid-column: 2/4;
 }
 
 #project4 {
   background-image: url(wood.png);
-  width: 20%;
+  grid-column: 1/3;
 }
 
 #project5 {
   background-color: burlywood;
-  width: 70%;
+  grid-column: 3;
 }
